@@ -1,16 +1,395 @@
-{% extends "_layout.swig" %}
-{% import '_macro/archive.swig' as archive_template %}
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
 
-{% block title %}
-  {% if page.archive %}
-    {{ __('menu.archives') }} - {{ config.title }}
-  {% elif page.tag %}
-    {{ page.tag }} - {{ config.title }}
-  {% elif page.category %}
-    {{ page.category }} - {{ config.title }}
-  {% endif %}
-{% endblock %}
 
-{% block content %}
-  {{ archive_template.render() }}
-{% endblock %}
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+    <link rel="alternate" href="/default" title="Xiaoran" >
+
+
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1.1"/>
+
+
+
+<link rel="canonical" href="http://example.com/categories/garbage/"/>
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Xiaoran">
+<meta property="og:url" content="http://example.com/categories/garbage/index.html">
+<meta property="og:site_name" content="Xiaoran">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Xiaoran">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1"/>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+
+
+
+
+
+<script type="text/javascript">
+  var themeConfig = {
+    fancybox: {
+      enable: false
+    },
+  };
+</script>
+
+
+
+
+    
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FMGWQ4LMD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7FMGWQ4LMD');
+  </script>
+
+
+
+
+
+    
+
+
+
+    <link rel="stylesheet" type="text/css" href="/css/search.css?v=1.1"/>
+
+
+
+    <title>
+  
+    garbage - Xiaoran
+  
+</title>
+  <meta name="generator" content="Hexo 7.1.1"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+  <body>
+    <div id="main-container">
+      <header id="mnh-header"><div class="site-header-inner">
+    <h1 class="site-title">
+        <a href="/." class="logo">Xiaoran</a>
+    </h1>
+
+    <nav id="nav-top">
+        
+            <ul id="menu-top" class="nav-top-items">
+                
+                    <li class="menu-item">
+                        <a href="/">
+                            
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="/archives">
+                            
+                            
+                                Archive
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="/about">
+                            
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+                
+                    <li class="menu-item">
+                        <a id="search" href="">Search</a>
+                    </li>
+                
+            </ul>
+        
+    </nav>
+
+</div>
+
+      </header>
+      <div id="mnh-content">
+        
+  
+<div id="primary">
+  <section id="archive" class="archive">
+    
+      
+        <div class="archive-title category">
+          <h2 class="archive-name">garbage</h2>
+        </div>
+      
+    
+
+    
+      
+
+      <div class="archive-post">
+        <span class="archive-post-time">
+          
+            2024-2-3
+          
+        </span>
+        <span class="archive-post-title">
+          <a href="/2024/02/03/ast-img-test/" class="archive-post-link">
+            ast_img_test
+          </a>
+        </span>
+      </div>
+    
+      
+
+      <div class="archive-post">
+        <span class="archive-post-time">
+          
+            2024-2-3
+          
+        </span>
+        <span class="archive-post-title">
+          <a href="/2024/02/03/fml-test/" class="archive-post-link">
+            fml_test
+          </a>
+        </span>
+      </div>
+    
+  </section>
+ </div>
+
+  
+  <nav class="pagination">
+    
+    
+  </nav>
+
+
+
+      </div>
+
+      <footer id="mnh-footer"><span class="footer-content-container">
+    <span class="footer-item">
+        
+            &copy;
+        
+        2024
+    </span>
+    
+        
+        <span class="footer-item footer-author">
+            developed by <a class="hexo-link" target="_blank" rel="noopener" href="https://github.com/PupilEarthquake">Xiaoran</a>.
+        </span>
+    
+    <span class="footer-item powered-by">
+        Powered by <a class="hexo-link" target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>.
+    </span>
+    
+    
+        <span class="footer-item footer-license">
+            Licensed under <a class="hexo-link" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0</a>.
+        </span>
+    
+</span>
+
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+    
+<div id="search-container" class="search-container-mask">
+    <div class="search-container">
+        <input type="hidden" id="algolia_index" value="hexo"/>
+        <input type="hidden" id="algolia_app_id" value=""/>
+        <input type="hidden" id="algolia_token" value="f955519b6e2781f49fc380347a202b96"/>
+        <div class="section">
+            <div class="container">
+                <div class="panel">
+                    <div class="panel-heading">
+                        Search
+                        <a id="close" href="" style="float: right; color: #363636;">
+                            <i class="fas fa-times-circle" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="panel-block">
+                        <div id="searchContainer" class="control has-icons-left">
+                            <input id="searchField" class="input" type="text" placeholder="Enter anything...">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-search" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="result"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+
+
+    
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+
+    <script type="text/javascript" src="/js/src/theme.js?v=1.1"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=1.1"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script type="text/javascript" src="/js/src/search.js"></script>
+
+
+  </body>
+</html>
