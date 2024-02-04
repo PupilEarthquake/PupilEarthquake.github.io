@@ -24,7 +24,7 @@ var buildItem = function (itemRaw) {
       '<a href="' + itemRaw.permalink.value + '">' +
       '<article class="media">' +
       // '<figure class="media-left">' +
-      // TODO: 寻找图床后再加上
+      //' 'TODO': 寻找图床后再加上
       // '<p class="image is-64x64">' +
       // '<img src="' + (itemRaw.cover && itemRaw.cover.value
       //     ? itemRaw.cover.value
